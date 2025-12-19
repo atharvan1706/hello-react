@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "./supabase";
+import myPhoto from "./assets/me.jpg";
+
 
 function App() {
   const [file, setFile] = useState(null);
@@ -53,6 +55,15 @@ function App() {
   return (
     <div style={{ padding: "40px", fontFamily: "sans-serif" }}>
       <h1>Hello World 🚀</h1>
+<img
+  src={myPhoto}
+  alt="My photo"
+  style={{
+    width: "200px",
+    marginBottom: "20px",
+    borderRadius: "50%",
+  }}
+/>
 
       <h3>Upload a file</h3>
 
